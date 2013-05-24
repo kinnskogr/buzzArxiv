@@ -28,3 +28,13 @@ I build the arxiv corpus using a bare-bones OAI-PMH client in python which runs 
 - Store the results in a pickle file:
    * python arxivAnalytics.py --data hepex.sql --granularity weekly --pickle hepex_freq.pickle
 
+### Example Plots
+
+The historical frequency of "Higgs" in hep-ex:
+![hepex_higgs](http://www.moderncentral.com/blog/wp-content/uploads/2013/03/hepex_higgs.png)
+
+How often some of the bigger experiments are mentioned in the literature:
+![hepex_experiments](http://www.moderncentral.com/blog/wp-content/uploads/2013/03/all_experiment_mentions_coarse.png)
+
+Outlier detection of the word neutrino in hep-ph:
+![hepph_neutrinos](http://www.moderncentral.com/blog/wp-content/uploads/2013/03/hepph_neutrino.png)
