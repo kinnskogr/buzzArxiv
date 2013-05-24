@@ -21,6 +21,10 @@ I build the arxiv corpus using a bare-bones OAI-PMH client in python which runs 
    * python arxivAnalytics.py -h
 - To populate the corpus database:
    * python arxivAnalytics.py --update --field hep-ex,physics --data hepex.sql
-- To make some simple word frequency plots and store the results in a pickle file:
+- To make some simple word frequency plots:
+   * python arxivAnalytics.py --data hepex.sql --granularity weekly
+   * > show_hist()
+   * > show_neutrinos()
+- Store the results in a pickle file:
    * python arxivAnalytics.py --data hepex.sql --granularity weekly --pickle hepex_freq.pickle
 
