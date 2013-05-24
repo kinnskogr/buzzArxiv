@@ -18,9 +18,9 @@ I build the arxiv corpus using a bare-bones OAI-PMH client in python which runs 
 
 
 - To get a list of command-line options:
--- python arxivAnalytics.py -h
+   * python arxivAnalytics.py -h
 - To populate the corpus database:
--- python arxivAnalytics.py --update --field hep-ex,physics --data hepex.sql
+   * python arxivAnalytics.py --update --field hep-ex,physics --data hepex.sql
 - To make some simple word frequency plots and store the results in a pickle file:
--- python arxivAnalytics.py --data hepex.sql --granularity weekly --pickle hepex_freq.pickle
+   * python arxivAnalytics.py --data hepex.sql --granularity weekly --pickle hepex_freq.pickle
 
