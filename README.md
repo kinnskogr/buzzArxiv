@@ -10,6 +10,17 @@ I build the arxiv corpus using a bare-bones OAI-PMH client in python which runs 
 
 ### Requirements
 
-- Tested using python 2.7.3, but should be fine with 2.5 or later.
+- Tested using python 2.7.3, but should be fine with 2.5 or later (for sqlite3 support).
 - pyoai 2.4.4 : Alternative methods of pulling the data are provided, but OAIPMH (http://www.openarchives.org/OAI/openarchivesprotocol.html) works best
 - numpy 1.6.2
+
+### Running
+
+
+- To get a list of command-line options:
+-- python arxivAnalytics.py -h
+- To populate the corpus database:
+-- python arxivAnalytics.py --update --field hep-ex,physics --data hepex.sql
+- To make some simple word frequency plots and store the results in a pickle file:
+-- python arxivAnalytics.py --data hepex.sql --granularity weekly --pickle hepex_freq.pickle
+
